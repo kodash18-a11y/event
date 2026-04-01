@@ -9,12 +9,15 @@
   <meta property="og:description" content="Интерактивная конференция в Стефорде: 7 катастроф коммуникации. Как слова уничтожают бизнес." />
   <meta property="og:image" content="hero.png" />
   <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="f.png" />
+  <link rel="shortcut icon" href="f.png" />
+  <link rel="apple-touch-icon" href="f.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #060606;
+      --bg: #12151b;
       --panel: rgba(255,255,255,.03);
       --line: rgba(41,231,208,.25);
       --line-soft: rgba(255,255,255,.10);
@@ -45,7 +48,7 @@
       background:
         radial-gradient(circle at top left, rgba(41,231,208,.10), transparent 28%),
         radial-gradient(circle at bottom right, rgba(41,231,208,.08), transparent 34%),
-        #000;
+        var(--bg);
     }
     .hero::before {
       content: "";
@@ -61,9 +64,9 @@
     .hero-inner { position: relative; padding: 40px 0 56px; z-index: 1; }
     .logo { width: min(360px, 60vw); height: auto; }
     .kicker {
-      margin-top: 14px;
+      margin-top: 114px;
       color: rgba(41,231,208,.82);
-      font-size: 13px;
+      font-size: 17px;
       font-weight: 700;
       letter-spacing: .18em;
       text-transform: uppercase;
@@ -128,7 +131,7 @@
       transition: opacity .2s ease, transform .2s ease;
     }
     .button:hover { opacity: .92; transform: translateY(-1px); }
-    .info-section, .audience-section, .pricing-section { background: #050505; }
+    .info-section, .audience-section, .pricing-section { background: var(--bg); }
     .section-inner { padding: 40px 0; }
     .info-grid {
       display: grid; gap: 24px; align-items: center;
@@ -196,7 +199,7 @@
         <div class="card">
           <div class="speaker-name">Алексей Орлов</div>
           <div class="speaker-role">Бизнес-психолог</div>
-          <div class="speaker-subrole">Автор курсов по манипуляциям и эмоциональному интеллекту.</div>
+          <div class="speaker-subrole">Эксперт в эмоциональном интеллекте предпринимателей и лидеров в команде.</div>
         </div>
         <div class="card">
           <div class="speaker-name">Юлия Якунина</div>
@@ -259,7 +262,7 @@
         </div>
         <div>
           <div class="label">Формат</div>
-          <div class="body-copy">Практический разбор бизнес-катастроф, где причина не только в стратегии, рынке или продукте, а в том, как внутри компании передавались смыслы, решения и ответственность.</div>
+          <div class="body-copy">Это практический разбор бизнес-катастроф, где причина не только в стратегии, рынке или продукте, а в том, как внутри компании передавались смыслы, решения и ответственность.</div>
         </div>
       </div>
     </div>
@@ -271,11 +274,11 @@
         <div>
           <div class="label">Оргсбор</div>
           <div class="price-big">от 1600 ₽</div>
-          <div class="price-note"></div>
+          <div class="price-note">Для афиши лучше оставлять короткую подачу «от 1600 ₽», а полную сетку цен показывать на лендинге.</div>
         </div>
         <div class="price-cards">
-          <div class="price-card active"><div class="price-label">До 02.04</div><div class="price-value">1600 ₽</div></div>
-          <div class="price-card"><div class="price-label">До 08.04</div><div class="price-value">1800 ₽</div></div>
+          <div class="price-card active"><div class="price-label">До 08.04</div><div class="price-value">1600 ₽</div></div>
+          <div class="price-card"><div class="price-label">До 02.04</div><div class="price-value">1800 ₽</div></div>
           <div class="price-card"><div class="price-label">В день мероприятия</div><div class="price-value">2500 ₽</div></div>
         </div>
       </div>
